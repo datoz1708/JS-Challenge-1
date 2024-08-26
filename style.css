@@ -86,3 +86,8 @@ h1 {
   min-width: 100px;
   justify-content: flex-end;
 }
+
+.strikethrough {
+    text-decoration: line-through;
+    color: gray;
+}
