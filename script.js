@@ -58,6 +58,14 @@ function addTask() {
     document.getElementById('todo-list').appendChild(li);
 
     document.getElementById('new-task').value = '';
+
+    checkbox.addEventListener('change', function() {
+        if (checkbox.checked) {
+            span.classList.add('strikethrough');
+        } else {
+            span.classList.remove('strikethrough');
+        }
+    });
 }
 
 document.getElementById('add-btn').addEventListener('click', addTask);
